@@ -1,0 +1,19 @@
+You are given a positive integer n. Find the factorial of n (n! = 1 * 2 * 3 * ... * n)
+
+Write a function called factorial that takes n as an argument and returns the factorial of n, i.e. product of numbers from 1 to n. Use a while loop when solving.
+
+Examples:
+
+factorial (2) must return 2;
+factorial (3) must return 6;
+factorial (8) must return 40320.
+
+Solution:
+function factorial(n){
+let f = n;
+ while (n > 1) {
+  n = n - 1;
+  f *= n;
+ }
+ return f;
+}
