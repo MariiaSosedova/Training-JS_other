@@ -1,0 +1,24 @@
+Given a positive integer n, which is equal to 2, raised to some power k:
+
+n = 2 ^ k
+
+Find this degree (number k).
+
+Write a function named powerOf2 that takes n as an argument and returns k (n = 2 ^k). When solving, use a while loop and operations of division or multiplication. It is forbidden to use methods of the Math.
+
+Examples:
+
+the  function powerOf2 (1) must return 0; // since 1 = 2 ** 0
+the  function powerOf2 (2) must return 1; // since 2 = 2 ** 1
+the  function powerOf2 (4) must return 2; // since 4 = 2 ** 2
+the  function powerOf2 (32) must return 5; // since 32 = 2 ** 5
+
+Solution:
+function powerOf2(n){
+  let k = 0;
+  while (n >= 2) {
+      n = n / 2;
+      k++
+  }
+  return k;
+}
