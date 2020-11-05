@@ -13,7 +13,7 @@ Solution:
 
 function sum(n){
 let sum = n;
- while (n >= 1) {
+ while (n > 1) {
     n = n - 1;
     sum += n;
  }
