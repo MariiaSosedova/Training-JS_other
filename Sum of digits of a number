@@ -9,10 +9,10 @@ sumOfDigits (13881) should return 21.
 Solution:
 
 function sumOfDigits(n){
-  let sum = 0;
-  while(n >= 0){
-    sum += n % 10;
-    n = (n - n % 10) / 10;
+  let sum = n % 10;
+  while (n > 0) {
+   n = (n - n % 10 ) / 10;
+   sum += n % 10;
   }
   return sum;
 }
