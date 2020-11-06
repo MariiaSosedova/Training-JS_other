@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57be674b93687de78c0001d9
+function largestPower(n){
+  let k = 0;
+  if (n > 1) {
+   while (n > 3) {
+      n = n / 3;
+      k++;
+    }
+  return k;
+  } else return -1;
+}
