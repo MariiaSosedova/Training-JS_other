@@ -18,7 +18,7 @@ function powerOf2(n){
   let k = 0;
   while (n >= 2) {
       n = n / 2;
-      k++
+      k++;
   }
   return k;
 }
