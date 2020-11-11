@@ -23,6 +23,3 @@ function invertNumber(n){
   } while (n > 0);
   return res;
 }
-
-
-
