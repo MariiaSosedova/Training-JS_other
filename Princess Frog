@@ -26,4 +26,3 @@ let sum = 0;
  } while (sum <= 1000);
  return days;
 }
-
