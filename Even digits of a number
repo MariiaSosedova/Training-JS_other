@@ -11,7 +11,6 @@ function evenDigits (110325) should return [0, 2];
 evenDigits (22222) should return [2, 2, 2, 2, 2];
 the evenDigits (131) function must return [].
 
-
 Solution:
 
 function evenDigits(n){
