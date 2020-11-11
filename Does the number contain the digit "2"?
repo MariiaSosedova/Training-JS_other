@@ -21,4 +21,3 @@ function doesNumberContain2(n){
   } while (n > 0);
   return false;
 }
-
