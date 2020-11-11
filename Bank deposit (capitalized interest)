@@ -19,6 +19,8 @@ bankPercent (1000, 10, 3) should return "1331.00".
 bankPercent (1000, 10, 5) should return "1610.51".
 
 
+
+
 Solution:
 
 function bankPercent(money, percent, period){
