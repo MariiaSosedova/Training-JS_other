@@ -23,5 +23,3 @@ function running(n){
   } while (days < 10); 
   return Math.round(run);
 }
-
-
