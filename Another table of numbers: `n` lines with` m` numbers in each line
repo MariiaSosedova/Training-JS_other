@@ -1,12 +1,13 @@
-Write a function called numericalTable that takes the numbers n and m as arguments and returns a table of numbers from 1 to n. Each line contains m numbers, separated by a space. All lines except the last one end with a \ n newline character.
+Write a function called numericalTable that takes the numbers n and m as arguments and returns a table of numbers from 1 to n. Each line contains m numbers separated by a space. 
+All lines except the last one end with a \ n newline character.
 
-For example, for n = 4, m = 3 you should get the line:
+For example for n = 4, m = 3 you should get the line:
 
 "1 1 1 \ n2 2 2 \ n3 3 3 \ n4 4 4"
 
-When outputting to the console, such a line is displayed as a table: (4 lines are displayed containing numbers from 1 to 4, 3 numbers in each line).
+When outputting to the console such a line is displayed as a table: (4 lines are displayed containing numbers from 1 to 4, 3 numbers in each line).
 
-Note: When checking the solution in tests, the line feed character is not displayed.
+Note: When checking the solution in tests the line feed character is not displayed.
 
 Examples:
 
