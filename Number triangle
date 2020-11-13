@@ -1,0 +1,16 @@
+Write a function called numericalTriangle that takes n as an argument and returns a triangle of numbers 1 through n separated by a space. 
+All lines except the last one end with a \ n newline character.
+
+For example for n = , the line should be:
+
+"1 \ n2 2 \ n3 3 3 \ n4 4 4 4 \ n5 5 5 5 5"
+
+When outputting to the console such a line is displayed as a "triangle" of numbers:
+
+Examples:
+
+numericalTriangle (1) should return: "1";
+numericalTriangle (3) should return: "1 \ n2 2 \ n3 3 3".
+
+Solution:
+
