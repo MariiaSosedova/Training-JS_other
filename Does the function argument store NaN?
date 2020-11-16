@@ -1,0 +1,19 @@
+Write a function isValid that checks if the value argument contains NaN.
+
+If the argument is NaN, return the string "Value is not a number".
+
+Otherwise, return the string "Value is valid".
+
+Examples:
+isValid (NaN) should return "Value is not a number";
+isValid ('abc' * 3) should return "Value is not a number";
+isValid (NaN + 1) should return "Value is not a number";
+isValid (0/0) should return "Value is not a number";
+isValid ('abc' + 3) shouldt return "Value is valid";
+isValid (25)  should return "Value is valid";
+isValid (1/0)  should return "Value is valid";
+isValid ('abc') should return "Value is valid".
+
+function isValid(value){
+  return Number.isNaN(value) ? "Value is not a number" : "Value is valid";
+}
