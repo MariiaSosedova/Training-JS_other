@@ -1,0 +1,20 @@
+Write a function multBy5 that takes value as an argument and if it's NaN it returns the string "Value is NaN" otherwise it multiplies the value by 5.
+
+Examples:
+
+multBy5 (3) should return 15;
+multBy5 (0) should return 0;
+multBy5 (true) should return 5;
+multBy5 (false) should return 0;
+multBy5 (null) should return 0;
+multBy5 ('a') should return NaN;
+multBy5 (undefined) should return NaN.
+multBy5 ('a' * 5) should return "Value is NaN";
+multBy5 (NaN) should return "Value is NaN";
+multBy5 (+ 'hello') should return "Value is NaN".
+
+Solution:
+
+function multBy5(value){
+  return Number.isNaN(value) ? "Value is NaN" : value *= 5;
+}
