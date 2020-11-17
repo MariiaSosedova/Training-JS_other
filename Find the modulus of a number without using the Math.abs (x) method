@@ -1,0 +1,16 @@
+Find the modulus of the number x without using the Math.abs (x) method.
+
+Write a function called absValue that takes a number x as an argument and returns the modulus of that number. 
+Solve this problem without using the Math.abs (x) method.
+
+Examples:
+
+absValue (-1) must return 1;
+absValue (5)  must return 5;
+absValue (0)  must return 0.
+
+Solution:
+
+function absValue(x){
+  return x < 0 ? -x : x;
+}
