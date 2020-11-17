@@ -1,0 +1,20 @@
+Get an array of powers of 2: [1, 2, 4, 8, 16 ...]
+
+2**0 = 1, 2**1 = 2, 2**2 = 4, ...
+
+Write a function called powersOfTwo that takes n as an argument and returns an array of powers of 2 (powers from 0 to n).
+
+Example:
+
+powersOfTwo (2) should return [1, 2, 4];
+powersOfTwo (4) should return [1, 2, 4, 8, 16].
+
+Solution:
+
+function powersOfTwo(n){
+  let arr = [];
+  for(let i = 0; i <= n; i++) {
+     arr.push(Math.pow(2,i));
+  }
+  return arr;
+}
