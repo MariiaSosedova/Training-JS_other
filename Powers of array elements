@@ -1,0 +1,19 @@
+Given an array arr. Modify the elements of the array to square each even element and cube each odd element.
+
+Write a function named powerArray that takes an array arr, squares every even element, cube every odd element and returns a modified array.
+
+Example:
+
+powerArray ([1, 2, 3, 5]) should return [1, 4, 27, 125];
+powerArray ([2, 4, 6, 1]) should return [4, 16, 36, 1].
+
+Solution:
+
+function powerArray(arr){
+  let a = [];
+  for(let i = 0; i < arr.length; i++) {
+     if (arr[i] % 2 === 0) a.push(Math.pow(arr[i], 2));
+     else a.push(Math.pow(arr[i], 3));
+  }
+  return a;  
+}
