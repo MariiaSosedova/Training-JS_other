@@ -1,0 +1,14 @@
+Write a function isSumEqualsNumber that takes three fractional numbers a, b, c as arguments and checks if the sum of the two fractional numbers equals the third fractional number 
+i.e. is the sum of a and b equal to c.
+
+The function must return true (if the sum of the numbers after rounding is equal to the third number) or false otherwise.
+
+Example:
+
+isSumEqualsNumber (0.1, 0.2, 0.3) function must return true.
+
+Solution:
+
+function isSumEqualsNumber(a, b, c){
+  return (a + b).toFixed(2) === c.toFixed(2);
+}
