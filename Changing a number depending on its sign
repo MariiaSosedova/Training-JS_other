@@ -1,0 +1,13 @@
+Write a function named changeNumber that takes the number num as an argument and doubles that number if it is positive or reverses the sign of that number if it is negative.
+
+Example:
+
+changeNumber (9) should return 18;
+changeNumber (-7) should return 7;
+changeNumber (0) should return 0.
+
+Solution:
+
+function changeNumber(num){
+  return num < 0 ? -num : num * 2;
+}
