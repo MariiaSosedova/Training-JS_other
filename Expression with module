@@ -1,0 +1,17 @@
+Write a function named expressionValue that takes three numbers a, b, c as arguments and returns the value of the expression:
+
+(|a-c| + |b-c|) / |a+b+c|
+
+Round the result to two decimal places.
+
+Examples:
+
+expressionValue (-1, 2, -2) should return 5;
+expressionValue (3, 5, -3) should return 2.8;
+expressionValue (0, 9, 8) should return 0.53.
+
+Solution:
+
+function expressionValue(a, b, c){
+  return +((Math.abs(a - c) + Math.abs(b -c)) / Math.abs(a + b + c)).toFixed(2);
+}
