@@ -1,0 +1,12 @@
+Write a function named power that takes two numbers x, y as arguments and returns x to the power of y.
+
+Examples:
+
+power (5, 3) should return 125;
+power (3, 0) should return 1.
+
+Solution:
+
+function power(x, y){
+  return Math.pow(x, y);
+}
