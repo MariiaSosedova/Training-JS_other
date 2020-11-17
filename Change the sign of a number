@@ -1,0 +1,15 @@
+A number is given. Get the inverse of the given one.
+
+Write a function called oppositeNumber that takes the number num as an argument and returns the opposite number.
+
+Example:
+
+ppositeNumber (9) should return -9;
+oppositeNumber (-7) should return 7;
+oppositeNumber (0) should return 0.
+
+Solution:
+
+function oppositeNumber(num){
+  return -num;
+}
