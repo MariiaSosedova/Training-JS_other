@@ -1,0 +1,15 @@
+Write a function called oppositeArray that takes an array arr as an argument and returns an array in which each element has been replaced with the opposite element.
+
+Example:
+
+oppositeArray ([1, -2, 3]) should return [-1, 2, -3].
+
+Solution:
+
+function oppositeArray(arr){
+  let a = [];
+  for(let i = 0; i < arr.length; i++) {
+    a.push(-arr[i]);
+  }
+  return a;
+}
