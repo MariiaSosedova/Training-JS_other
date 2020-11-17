@@ -1,0 +1,17 @@
+Points M and N are symmetrical about the origin.
+Write a function called oppositePoint that takes the numbers x and y (coordinates of point M) as arguments and returns the coordinates of point N as the string "N (x, y)".
+
+Example:
+
+oppositePoint (4, 5) should return "N (-4, -5)";
+oppositePoint (-4, -5) should return "N (4, 5)";
+oppositePoint (-4, 5) should return "N (4, -5)";
+oppositePoint (4, -5) should return "N (-4, 5)";
+oppositePoint (4, 0) should return "N (-4, 0)";
+oppositePoint (0, 0) should return "N (0, 0)".
+
+Solution:
+
+function oppositePoint(x, y){
+  return `N(${-x},${-y})`;
+}
