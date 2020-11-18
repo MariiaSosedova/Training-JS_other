@@ -1,0 +1,17 @@
+Write a function called squareRoot that takes x as an argument and returns:
+
+square root of x if x> = 0,
+the message "Root of a negative number is NaN" if x <0.
+Round the result to two decimal places.
+
+Examples:
+
+squareRoot (9) should return 3;
+squareRoot (0) should return 0;
+squareRoot (-4) should return "Root of a negative number is NaN".
+
+Solution:
+
+function squareRoot(x){
+  return x >= 0 ? +Math.sqrt(x).toFixed(2) : "Root of a negative number is NaN";
+}
