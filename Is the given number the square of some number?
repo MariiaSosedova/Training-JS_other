@@ -1,0 +1,11 @@
+Write a function called isSquare that takes a number x as an argument and returns a string like
+
+x is square of y if x is the square of some y,
+message x is not a square if x is not a square of an integer.
+Indication. You need to check if the square root of a number is an integer. For example, the root of 9 is 3 (integer), the root of 7 is not an integer. You can check that the number x is an integer by checking if the condition x% 1 === 0 (this condition is true for integers and false for non-integers).
+
+Examples:
+
+isSquare (9) should return "9 is square of 3";
+the isSquare (0) function should return "0 is square of 0";
+the isSquare (7) function should return "7 is not a square".
