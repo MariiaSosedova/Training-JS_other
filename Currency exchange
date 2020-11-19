@@ -1,0 +1,16 @@
+A dollar is worth x rubles. What is the largest amount of dollars you can buy for the amount of rubles?
+
+Write a function called changeMoney that takes the numbers x (value of $ 1) and amount (amount of money) as arguments and 
+returns the largest amount of dollars that amount $ can buy.
+
+Examples:
+
+changeMoney (60, 1220) should return 20;
+changeMoney (50, 1549) should return 30;
+changeMoney (80, 1500) should return 18.
+
+Solution:
+
+function changeMoney(x, amount){
+  return Math.floor(amount / x);
+}
