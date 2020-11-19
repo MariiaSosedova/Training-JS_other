@@ -1,0 +1,14 @@
+You are given two numbers a, b. Find the quotient of these numbers and round the result to the nearest whole number.
+Write a function called quotient that takes two numbers a, b as arguments and returns the quotient of those numbers. 
+Round the result to the nearest whole number.
+
+Examples:
+
+quotient (59, 27) should return 2;
+quotient (50, 12) should return 4.
+
+Solution:
+
+function quotient(a, b){
+  return Math.round(a / b);
+}
