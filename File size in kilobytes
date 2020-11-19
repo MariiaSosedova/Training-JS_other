@@ -1,0 +1,17 @@
+The size of the file n is given in bytes. Find the number of complete kilobytes in this file size. (1 K = 1024 bytes).
+
+Write a function named fileSizeInK that takes the number n (file size in bytes) as an argument and returns the number of full kilobytes in that size. 
+Use the Math.floor () method.
+
+Examples:
+
+fileSizeInK (1450) must return 1;
+fileSizeInK (3100) should return 3;
+fileSizeInK (57883) should return 56.
+
+
+Solution:
+
+function fileSizeInK(n){
+  return Math.floor(n / 1024);
+}
