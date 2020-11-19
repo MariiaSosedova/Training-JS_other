@@ -1,0 +1,14 @@
+Write a function integerPartsOfElements that takes an arr array as an argument and returns an array in which the elements are equal to the integer part of their value.
+
+Examples:
+
+integerPartsOfElements ([7.23, 34.89, 0.9, 4.45, 8.5]) should return [7, 34, 0, 4, 8]
+
+Solution:
+
+function integerPartsOfElements(arr){
+  for(let i = 0; i < arr.length; i++) {
+    arr[i] = Math.trunc(arr[i]);
+  }
+  return arr;  
+}
