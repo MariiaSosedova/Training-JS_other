@@ -1,0 +1,18 @@
+The swim involved 3 athletes. The competition results are stored as an array:
+
+[[name1, time1], [name2, time2], [name3, time3]].
+
+Determine the winner's time.
+
+Write a function named victoryInSwim that takes an arr array containing the results of the competition as an argument and returns the fastest time. 
+In all tests the number of athletes is always 3.
+
+Example:
+
+victoryInSwim ([['Nick', 8], ['Bob', 10], ['Kim', 6]]) should return 6
+
+Solution:
+
+function victoryInSwim(arr){
+  return Math.min(arr[0][1], arr[1][1], arr[2][1]);
+}
