@@ -1,0 +1,15 @@
+Write a function maxMin that takes an array arr as arguments and returns an array containing the maximum and minimum value: [max, min]. 
+If the array is empty return [].
+
+Example:
+
+function maxMin ([3, 4, 8, 1]) should return [8, 1];
+function maxMin ([7, 7]) should return [7, 7];
+function maxMin ([2]) should return [2, 2];
+function maxMin ([]) should return [];
+
+Solution:
+
+function maxMin(arr){
+  return arr.length === 0 ? [] : [Math.max(...arr), Math.min(...arr)];
+}
