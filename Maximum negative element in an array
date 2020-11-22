@@ -1,0 +1,22 @@
+Write a maxNegative function that takes an array arr as an argument and returns the maximum negative element in the array. 
+If arr contains no negative elements return null.
+
+Example:
+
+maxNegative ([3, -54, 8, -21, 0]) should return -21;
+maxNegative ([7, 5]) should return null;
+maxNegative ([]) should return null.
+
+Solution:
+
+function maxNegative(arr){
+  let a = [];
+    if (arr.length === 0) {
+     return null;
+    } else {
+      for(let el of arr) {
+       if (el <0 ) a.push(el);
+    }
+    return a.length === 0 ? null : Math.max(...a);
+ }
+}
