@@ -1,0 +1,15 @@
+Write a function differenceMaxMin that takes an array arr as an argument and returns the difference between the maximum and minimum value. 
+If the array is empty return null.
+
+Example:
+
+differenceMaxMin ([3, 4, 8, 1]) should return 7;
+differenceMaxMin ([7, 7]) should return 0;
+differenceMaxMin ([2]) should return 0;
+differenceMaxMin ([]) should return null;
+
+Solution:
+
+function differenceMaxMin(arr){
+  return arr.length === 0 ? null : Math.max(...arr) - Math.min(...arr);
+}
