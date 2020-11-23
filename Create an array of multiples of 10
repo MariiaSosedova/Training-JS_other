@@ -1,0 +1,18 @@
+Write a createArray function that takes a non-negative integer n as an argument and returns an array containing n multiples of 10.
+
+Example:
+
+createArray (5)  return [10, 20, 30, 40, 50];
+createArray (2)  return [10, 20];
+createArray (1)  return [10];
+createArray (0) return [].
+
+Solution:
+
+function createArray(n){
+  let arr = [];
+  for(let i = 10; i <= 10 * n ; i += 10) {
+    arr.push(i);
+  }
+  return n === 0 ? [] : arr;
+}
