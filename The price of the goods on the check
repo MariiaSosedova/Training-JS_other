@@ -1,0 +1,17 @@
+On the shop receipt the price of the goods and the name of the goods are printed in the form: "2.59 milk". 
+Get the price of an item as a number.
+
+Write a priceOfItem function that takes a receipt (purchase description as a string: "price item name") as an argument and returns a number - the price of the item.
+
+Examples:
+
+priceOfItem ("2.59 milk") should return 2.59.
+priceOfItem ("4.55 bread") should return 4.55.
+priceOfItem ("2 cake") should return 2.
+priceOfItem (". 4 water") should return 0.4
+
+Solution:
+
+function priceOfItem(receipt){
+  return parseFloat(receipt);
+}
