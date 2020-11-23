@@ -1,0 +1,17 @@
+Write a createArray function that takes a number n and a value m as arguments and returns an array containing n elements equal to m.
+
+Example:
+
+createArray (5, 1) should return [1, 1, 1, 1, 1].
+createArray (3, 10)  should return [10, 10, 10].
+createArray (4, 'a') should return ['a', 'a', 'a', 'a']
+
+Solution:
+
+function createArray(n, m){
+  let arr = [];
+  for(let i = 0; i < n; i++) {
+    arr[i] = m;
+  }
+  return arr;
+}
