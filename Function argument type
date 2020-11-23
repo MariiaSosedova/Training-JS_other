@@ -1,0 +1,19 @@
+Write a function typeOfArg that takes value as an argument and returns the type of value. 
+When solving the problem use the {} .toString.call () method.
+
+Example:
+
+typeOfArg (3) return "[object Number]";
+typeOfArg ("Hello") return "[object String]";
+typeOfArg (true)  return "[object Boolean]";
+typeOfArg ([0])  return "[object Array]";
+typeOfArg ({name: 'Bob'})  return "[object Object]";
+typeOfArg (null) return "[object Null]";
+typeOfArg (undefined) f return "[object Undefined]".
+
+
+Solution:
+
+function typeOfArg(value){
+  return {}.toString.call(value);
+}
