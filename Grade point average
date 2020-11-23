@@ -1,0 +1,17 @@
+Write a function average that takes an array of marks (an array of students' marks) as an argument and returns the grade point average. 
+Round the result to 1 decimal place and return it as a string.
+
+Example:
+
+average function ([4, 5, 4, 5]) should return "4.5".
+average ([5, 3]) should return "4.0"
+
+Solution:
+
+function average(marks){
+  let sum = 0;
+  for(let el of marks) {
+    sum += el;
+  }
+  return (sum / marks.length).toFixed(1);
+}
