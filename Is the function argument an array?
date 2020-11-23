@@ -1,0 +1,19 @@
+Write a function isArgArray that takes value as an argument and returns true if value is an array and false otherwise. 
+Use the Array.isArray () method when solving.
+
+Example:
+
+isArgArray (123) return false;
+isArgArray ("Welcome") return false;
+isArgArray (true) return false;
+isArgArray ([]) return true;
+isArgArray ({name: 'Alice'}) return false;
+isArgArray (null)  return false;
+isArgArray (undefined) return false;
+isArgArray ([1,2,3,4]) return true.
+
+Solution:
+
+function isArgArray(value){
+  return Array.isArray(value);
+}
