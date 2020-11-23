@@ -1,0 +1,14 @@
+Write a function named numToBinary that takes a positive decimal integer num as an argument and returns that number in binary.
+
+Examples:
+
+numToBinary (5) should return 101;
+numToBinary (2) should return 10;
+numToBinary (12) should return 1100;
+numToBinary (60) should return 111100.
+
+Solution:
+
+function numToBinary(num){
+  return +num.toString(2);
+}
