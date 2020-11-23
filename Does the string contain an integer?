@@ -1,0 +1,21 @@
+Write a function isStringContainsNumber that takes the string str as an argument and returns true if the string contains an integer and false otherwise.
+
+Hint: a string contains an integer if the result of a loose comparison of the original string and converting the string to an integer is true.
+
+For instance,
+
+'45' == Number.parseInt ('45 '); (comparison result '45' == 45 is true)
+
+'1z2' == Number.parseInt ('1z2'); (comparison result '1z2' == 1 is false)
+
+Examples:
+
+isStringContainsNumber ("123")  return true.
+isStringContainsNumber ("- 34") return true.
+isStringContainsNumber ("s12")  return false.
+
+Solution:
+
+function isStringContainsNumber(str){
+  return parseInt(str) == str;
+}
