@@ -1,0 +1,12 @@
+Write a function named numToStr that takes the number num as an argument and returns a string containing that number.
+
+Examples:
+
+numToStr (9) return "9";
+numToStr (-2) return "-2".
+
+Solution:
+
+function numToStr(num){
+  return num.toString();
+}
