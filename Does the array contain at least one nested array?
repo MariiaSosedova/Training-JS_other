@@ -1,0 +1,19 @@
+Write the isArrayContainsArray function that takes the arr array as an argument and returns true if at least one of the array elements is an array and false otherwise.
+
+Example:
+
+isArrayContainsArray (['a ", [1], 123]) return true;
+isArrayContainsArray ([[], true, false, [12]]) return true;
+isArrayContainsArray ([[1], [1, 2], [1,2,3]]) return true;
+isArrayContainsArray (["a", "b", "c"]) return false;
+isArrayContainsArray ([{}, 12, "qwerty", null, undefined]) return false
+
+Solution:
+
+function isArrayContainsArray(arr){
+  let res = false;
+  for(let el of arr) {
+    if (Array.isArray(el)) res = true;
+  }
+  return res;
+}
