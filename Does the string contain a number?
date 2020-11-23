@@ -1,0 +1,23 @@
+Write a function isStringContainsNumber that takes the string str as an argument and returns true if the string contains a number and false otherwise.
+
+Hint: a string contains a number if the result of a loose comparison of the original string and the conversion of the string to a floating point number is true.
+
+For instance,
+
+'45' == Number.parseFloat ('12 .34 '); (comparison result '12 .34 '== 12.34 is true)
+
+'1z2' == Number.parseFloat ('12, 23 '); (comparison result '12, 23 '== 12 is false)
+
+Examples:
+
+isStringContainsNumber ("123") return true.
+isStringContainsNumber ("12.345")  return true.
+isStringContainsNumber ("- 12.3") return true.
+isStringContainsNumber ("s12") return false.
+isStringContainsNumber ("12.3") return false.
+
+Solution:
+
+function isStringContainsNumber(str){
+  return str == parseFloat(str);
+}
