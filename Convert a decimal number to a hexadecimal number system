@@ -1,0 +1,14 @@
+Write a function named numToHexadecimal that takes a positive integer decimal number num as an argument and returns that hexadecimal number as a string.
+
+Examples:
+
+function numToHexadecimal (9) should return "9";
+numToHexadecimal (10) should return "a";
+numToHexadecimal (12) should return "c";
+numToHexadecimal (16) should return "10".
+
+Solution:
+
+function numToHexadecimal(num){
+  return num.toString(16);
+}
