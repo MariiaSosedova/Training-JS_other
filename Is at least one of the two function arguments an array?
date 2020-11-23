@@ -1,0 +1,15 @@
+Write a function isArrayInArg that takes two values value1 and value2 as arguments and returns true if at least one of the arguments is an array and false otherwise.
+
+Example:
+
+isArrayInArg (12, [1])  return true;
+isArrayInArg ([], "Welcome") return true;
+isArrayInArg ([1], [0])  return true;
+isArrayInArg (15, 0)  return false;
+isArrayInArg ({name: 'Alice'}, "Bob") return false.
+
+Solution:
+
+function isArrayInArg(value1, value2){
+  return Array.isArray(value1) ||  Array.isArray(value2);
+}
