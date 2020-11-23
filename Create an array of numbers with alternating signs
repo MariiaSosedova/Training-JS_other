@@ -1,0 +1,21 @@
+Write an alternationArray function that takes a non-negative integer n as an argument and returns an array containing numbers from 0 to n
+where even numbers are positive and odd numbers are negative.
+
+Example:
+
+alternationArray (5) should return [0, -1, 2, -3, 4, -5];
+alternationArray (2) should return [0, -1, 2];
+alternationArray (1) should return [0, -1];
+alternationArray (0) should return [0].
+
+
+Solution:
+
+function alternationArray(n){
+  let arr = [];
+  for(let i = 0; i <= n; i++) {
+    if (i % 2 === 0) arr.push(i);
+    else arr.push(-i);
+  }
+  return arr;
+}
