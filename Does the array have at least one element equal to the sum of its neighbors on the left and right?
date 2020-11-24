@@ -1,0 +1,23 @@
+Write a function isElementInArray that takes an array arr as an argument and
+if the array contains at least one element equal to the sum of its neighbors on the left and right finds the first such element and returns a string like this:
+
+"true: it is <element>"
+, where <element> is the value of the element.
+or false otherwise.
+
+Example:
+
+isElementInArray ([1, 5, 4, 1, 0, -1]) return "true: it is 5" (the first such element is 5 = 1 + 4);
+isElementInArray ([2, 9, 0, 0]) return false;
+isElementInArray ([1, 2, 3, 1])  return "true: it is 3" (3 = 2 + 1);
+isElementInArray ([]) return false.
+
+Solution:
+
+function isElementInArray(arr){
+  let str = '';
+  for(let i = 0; i< arr.length; i++) {
+    if (arr[i+1] === arr[i] + arr[i+2]) str = `true: it is ${arr[i+1]}`;
+  }
+  return str === '' ? false : str;
+}
