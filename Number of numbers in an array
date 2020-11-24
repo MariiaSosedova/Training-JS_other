@@ -1,0 +1,17 @@
+Write a function countNumbers that takes an array arr as an argument and returns the number of elements of type "number".
+
+Example:
+
+countNumbers ([0, 4.1, 'Alice', true, 1, false, 'hohoho']) should return 3.
+countNumbers ([])  should return 0.
+countNumbers (['a', 'b']) should return 0.
+
+Solution:
+
+function countNumbers(arr){
+  let count = 0;
+  for(let el of arr) {
+    if (typeof el === 'number') count++;
+  }
+  return count;
+}
