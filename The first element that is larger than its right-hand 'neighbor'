@@ -1,0 +1,16 @@
+Write a function firstBigger that takes a numeric array arr as an argument and returns the first element of the array that is larger than its right-hand neighbor
+or undefined if the array is in ascending order.
+
+Examples:
+
+firstBigger ([0, 8, 4, 1])  return 8 (since 8> 4 is the first element of the array that is greater than the next element);
+firstBigger ([1, 2, 3, 5, 5, 15])  return undefined (since the elements are in ascending order the array does not contain an element that is greater than the next element);
+firstBigger ([]) f return undefined.
+
+Solution:
+
+function firstBigger(arr){
+  for(let i = 0; i < arr.length; i++) {
+    if (arr[i] > arr[i + 1]) return arr[i];
+  }
+}
