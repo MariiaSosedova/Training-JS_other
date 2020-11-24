@@ -1,0 +1,18 @@
+Write a function countEven that takes an arr array as an argument and returns the number of even elements in the array.
+
+Example:
+
+countEven ([0, 2, 6, 8, 0, 5]) should return 5;
+countEven ([0, -1, 12]) should return 2;
+countEven ([]) should return 0.
+
+
+Solution:
+
+function countEven(arr){
+  let count = 0;
+  for(let el of arr) {
+    if (el % 2 === 0) count++;
+  }  
+  return count;
+}
