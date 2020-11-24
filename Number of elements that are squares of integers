@@ -1,0 +1,18 @@
+Write a function counOfSquares that takes an array arr as an argument and returns the number of elements that are squares of integers.
+
+Example:
+
+counOfSquares ([0, 25, 'f', true, 9, 7, false, 'h'])  should return 3.
+counOfSquares ([2, 5]) should return 0.
+counOfSquares ([- 2, 1, 1.4])  should return 1.
+counOfSquares ([false])  should return 0.
+
+Solution:
+
+function counOfSquares(arr){
+  let count = 0;
+  for(let el of arr) {
+    if (typeof el === 'number' && Math.sqrt(el) % 1 === 0) count++;
+  }
+  return count; 
+}
