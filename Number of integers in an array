@@ -1,0 +1,19 @@
+Write a function countIntegers that takes an array arr as an argument and returns the number of elements that are integers.
+
+Example:
+
+countIntegers ([0, 4.1, 'f', true, 1, false, 'h']) should return 2.
+countIntegers ([2.5]) should return 0.
+countIntegers ([- 2, 1, 1.4]) should return 2.
+countIntegers ([true])should return 0.
+
+
+Solution:
+
+function countIntegers(arr){
+  let count = 0;
+  for(let el of arr) {
+    if (parseInt(el) === el) count++;
+  }
+  return count;
+}
