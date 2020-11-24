@@ -1,0 +1,17 @@
+Write a function countEvenPositive that takes an array arr as an argument and returns the number of even positive elements in the array.
+
+Example:
+
+countEvenPositive ([0, -2, -6, 8, 1, 5]) should return 1;
+countEvenPositive ([10, -2, 12]) should return 2;
+countEvenPositive ([])  should return
+
+Solution:
+
+function countEvenPositive(arr){
+  let count = 0;
+  for(let el of arr) {
+    if (el > 0 && el % 2 === 0) count++;
+  }
+  return count;
+}
