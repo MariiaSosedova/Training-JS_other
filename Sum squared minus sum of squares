@@ -1,0 +1,27 @@
+Write a function squares that takes the arr array as an argument and 
+returns the difference between the square of the sum of the elements and the sum of the squares of the elements in the array.
+
+For example given an array [2, 1, 4].
+The square of the sum of the elements: (2 + 1 + 4) ** 2 = 7 ** 2 = 49
+Sum of squares of elements: 2 ** 2 + 1 ** 2 + 4 ** 2 = 4 + 1 = 16 = 21
+Result: 49 - 21 = 28
+
+Use a loop in your solution. Array methods are not allowed.
+
+Examples:
+squares ([2, 1, 4])  return 28;
+squares ([1, 7])  return 14;
+squares ([10]) return 0;
+squares ([])  return 0
+
+Solution:
+
+function squares(arr){
+  let sum = 0;
+  let sum1 = 0;
+  for(let el of arr) {
+    sum += el;
+    sum1 += el ** 2;
+  }
+  return sum ** 2 - sum1;
+}
