@@ -1,0 +1,48 @@
+What date corresponds to the 100th day of the year? What date corresponds to day 200? But the answer also depends on whether the year is a leap year or not!
+
+Write a function that will help you determine the date if you know the number of the day in the year as well as whether the year is a leap year or not. 
+The function takes the day number day and the boolean isLeap as arguments and returns the date of the year as the string "Month, day". 
+In all tests the day number is a number from 1 to 366.
+
+Example:
+getDay (15, false)  return "January, 15";
+getDay (41, false)  return "February, 10";
+getDay (59, false)  return "February, 28";
+getDay (60, false)  return "March, 1";
+getDay (60, true)  return "February, 29";
+getDay (61, false)  return "March, 2";
+getDay (61, true)  return "March, 1";
+getDay (365, false) return "December, 31";
+getDay (365, true)  return "December, 30";
+getDay (366, true)  return "December, 31";
+getDay (366, false)  return "wrong day".
+
+Solution:
+
+function getDay(day, isLeap){
+  if (day > 366 || day <= 0 || day === 366 && isLeap === false) return "wrong day";
+  let days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  if (isLeap) days[1] = 29;
+  let s = 0;
+  let i = 0;
+  while (s < day) {
+   s +=days[i];
+   i++;
+  }
+  let d = day - (s - days[i - 1]);
+  let month = i-1;
+  switch(month) {
+    case 0: return `January, ${d}`;
+    case 1: return `February, ${d}`;
+    case 2: return `March, ${d}`;
+    case 3: return `April, ${d}`;
+    case 4: return `May, ${d}`;
+    case 5: return `June, ${d}`;
+    case 6: return `July, ${d}`;
+    case 7: return `August, ${d}`;
+    case 8: return `September, ${d}`;
+    case 9: return `October, ${d}`;
+    case 10: return `November, ${d}`;
+    case 11: return `December, ${d}`;
+   } 
+}
