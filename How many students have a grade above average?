@@ -1,0 +1,26 @@
+The array contains the marks of the students in the class. How many students have a higher than average score? 
+(That is how many students have a score that is higher than the arithmetic mean of the array elements).
+
+Write a function aboveAverageScore that takes an array of marks arr as an argument and returns the number of students who have an above average score. 
+In all tests the array is not empty.
+Use a loop in your solution. Array methods are not allowed.
+
+Example:
+aboveAverageScore ([3, 4, 5]) return 1 (the average score is 4 and only one number 5> 4);
+aboveAverageScore ([4, 5]) return 1;
+aboveAverageScore ([2, 3, 5]) return 1;
+aboveAverageScore ([2, 2, 2])  return 0
+
+Solution:
+
+function aboveAverageScore(arr){
+  let count = 0;
+  let sum = 0;
+  for(let el of arr) {
+      sum += el;
+  }
+  for (let el of arr){
+    if (el > (sum / arr.length)) count++;
+  }
+  return count;
+}
