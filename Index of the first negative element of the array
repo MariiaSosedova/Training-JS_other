@@ -1,0 +1,18 @@
+Write a function indexOfFirstNegative that takes the arr array as an argument and returns the index of the first negative element in the array.
+If there are no negative elements or the array is empty return the string "no negative elements".
+
+Examples:
+indexOfFirstNegative function ([0, 8, -6, 0, -9])  return 2 (since arr [2] <0 is the first negative element);
+indexOfFirstNegative ([- 2, 4])  return 0 (since arr [0] <0);
+indexOfFirstNegative ([2, 7, 8])  return "no negative elements";
+indexOfFirstNegative ([])  return "no negative elements".
+
+Solution:
+
+function indexOfFirstNegative(arr){
+let res = "no negative elements";
+  if (arr.length === 0) {return res;}
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {return i;}
+  } return res;
+}
