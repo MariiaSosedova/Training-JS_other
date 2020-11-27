@@ -1,0 +1,17 @@
+Write a function productOfElements that takes the arr array as an argument and returns the product of the array's elements.
+Use a loop in your solution. Array methods are not allowed.
+
+Example:
+productOfElements ([1, 2, 4]) return 8;
+productOfElements ([2, 15]) return 30;
+productOfElements ([])  return 0
+
+Solution:
+
+function productOfElements(arr){
+  let m = 1;
+  for(let el of arr) {
+    m *= el;
+  }
+  return arr.length === 0 ? 0 : m;
+}
