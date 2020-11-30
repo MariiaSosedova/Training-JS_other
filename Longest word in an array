@@ -1,0 +1,20 @@
+Write a function theLongestWord that takes an array of strings arr as an argument and returns the maximum word length. 
+It is guaranteed that in all tests the array contains at least one word.
+
+Use a loop in your solution. The use of the Math.max () method is not permitted.
+
+Example:
+
+theLongestWord (["a", "big", "elephant"]) should return "elephant";
+theLongestWord (["mouse", "cat")  should return "mouse";
+theLongestWord (["test"]) should return "test".
+
+Solution:
+
+function theLongestWord(arr){
+let max = arr[0];
+  for(let i = 0; i < arr.length; i++) {
+   if(arr[i].length > max.length) max = arr[i];
+  }
+  return max;
+}
