@@ -1,0 +1,19 @@
+Write a function addValue that takes an array arr and value as arguments adds value to the end of the array and returns the new length of the array. 
+The length property cannot be used in this task.
+
+Example:
+
+addValue ([1, 2, 3], 10) should return 4;
+addValue ([1, -1, 14, 0], "a") should return 5;
+addValue ([], 10) should return 1.
+
+Solution:
+
+function addValue(arr, value){
+  arr.push(value);
+  let count = 0;
+  for(let el of arr) {
+     count++;
+  }
+  return count;
+}
