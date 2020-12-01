@@ -1,0 +1,14 @@
+Write a function addValue that takes an array arr and value as arguments adds value to the end of the array and returns the resulting array.
+
+Example:
+
+addValue ([1, 2, 3], 10) should return [1, 2, 3, 10];
+addValue ([1, 1, 1], "a") should return [1, 1, 1, "a"];
+addValue ([], 10)  should return [10].
+
+Solution:
+
+function addValue(arr, value){
+  arr.push(value);
+  return arr;
+}
