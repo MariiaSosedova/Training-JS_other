@@ -1,0 +1,28 @@
+The array stores information about cars in the dealership and their prices. Data about each car is presented as an array [made, price] (for example, ["Mazda", 17000]). 
+Get the name of the most expensive car. If there are several cars with the same price in the array return the first one.
+
+Write the mostExpensiveCar function that takes an array arr containing the vehicle data and returns the name of the most expensive vehicle. 
+In all tests the input array is not empty.
+
+Use a loop in your solution. The use of the Math.max () method is not permitted.
+
+Example:
+
+mostExpensiveCar ([["Honda", 18500], ["Toyota", 21200], ["BMW", 19900]]) should return "Toyota";
+mostExpensiveCar ([["Honda", 18000], ["Toyota", 18000]]) should return "Honda";
+mostExpensiveCar ([["BMW", 19900]]) should return "BMW"
+
+
+Solition:
+
+function mostExpensiveCar(arr){
+  let max = arr[0][1],
+      res = '';
+  for(let i = 1; i < arr.length; i++) {
+     if(arr[i][1] > max) {
+       max = arr[i][1];
+       res = arr[i][0];
+     } 
+  }
+  return  res === '' ? arr[0][0] : res;
+}
