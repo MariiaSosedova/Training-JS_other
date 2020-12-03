@@ -1,0 +1,21 @@
+Given an array containing numbers and strings. Get two arrays: an array of numbers and an array of strings from the values of the original array.
+Write a separateNumsAndStrings function that takes a mixed array arr as an argument returns an array containing an array of numbers and an array of strings as: 
+[[array of numbers], [array of strings]]
+
+Example:
+
+separateNumsAndStrings function ([1, 2, "a", 3, "b"])  return [[1, 2, 3], ["a", "b"]];
+separateNumsAndStrings ([1, 1, 1])  return [[1, 1, 1], []];
+separateNumsAndStrings (["a", "b", "c"])  return [[], ["a", "b", "c"]];
+separateNumsAndStrings ([])  return [[], []].
+
+Solution:
+
+  let a = [],
+      b = [];
+  for(let i = 0; i < arr.length; i++) {
+    if(typeof arr[i] === 'number') a.push(arr[i]);
+    if(typeof arr[i] === 'string') b.push(arr[i]);
+  }
+  return [a, b];
+}
