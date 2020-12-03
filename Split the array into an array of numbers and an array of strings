@@ -11,6 +11,7 @@ separateNumsAndStrings ([])  return [[], []].
 
 Solution:
 
+function separateNumsAndStrings(arr){
   let a = [],
       b = [];
   for(let i = 0; i < arr.length; i++) {
