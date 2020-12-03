@@ -1,0 +1,23 @@
+An array containing numbers is given. Get two arrays: an array of positive numbers and an array of negative numbers.
+Write a separatePosAndNeg function that takes a numeric array arr as an argument returns an array containing an array of positive numbers and an array of negative numbers as:
+[[array of positive numbers], [array of negative numbers]].
+An element equal to zero should not be included in any array.
+
+Example:
+
+separatePosAndNeg ([- 2, 3, 7, -4) return [[3, 7], [- 2, -4]];
+separatePosAndNeg ([1, 2])  return [[1, 2], []];
+separatePosAndNeg ([])  return [[], []].
+
+
+Solution:
+
+function separatePosAndNeg(arr){
+  let a = [],
+      b = [];
+  for(let el of arr) {
+    if (el > 0) a.push(el);
+    if (el < 0) b.push(el);
+  }
+  return [a, b];
+}
