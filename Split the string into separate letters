@@ -1,0 +1,18 @@
+Write a splitString function that takes str as an argument and returns an array containing the letters of that string. 
+Use a row loop and push method in your solution. The split () method is prohibited in this task.
+
+Example:
+
+splitString ("Monkey")  return ["M", "o", "n", "k", "e", "y"];
+splitString ([])  return [].
+
+
+Solution:
+
+function splitString(str){
+  let arr = [];
+  for(let el of str) {
+    arr.push(el);
+  }
+  return arr;
+}
