@@ -1,0 +1,14 @@
+Write a function deleteFromEnd that takes the arr array as an argument removes the last element of the array and returns the resulting array.
+
+Example:
+
+deleteFromEnd ([1, 2, 3]) return [1, 2];
+deleteFromEnd ([1])return [];
+deleteFromEnd ([]) return [].
+
+Solution:
+
+function deleteFromEnd(arr){
+  arr.pop();
+  return arr;
+}
