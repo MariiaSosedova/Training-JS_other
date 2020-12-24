@@ -1,0 +1,14 @@
+Write a function deleteFirstElement that takes the arr array as an argument removes the first element of the array and returns the resulting array.
+
+Example:
+
+deleteFirstElement ([10, 1, 2, 3])  return [1, 2, 3];
+deleteFirstElement ([1])  return [];
+deleteFirstElement ([])  return [].
+
+Solution:
+
+function deleteFirstElement(arr){
+arr.shift();
+return arr;
+}
