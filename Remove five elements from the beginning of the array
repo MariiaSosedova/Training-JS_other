@@ -1,0 +1,18 @@
+Write a function deleteFiveElements that takes an arr array as an argument removes the first five elements of the array and returns the resulting array.
+
+Example:
+
+deleteFiveElements ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])return [6, 7, 8, 9, 10];
+deleteFiveElements ([1, 2, 3, 4, 5, 6])  return [6];
+deleteFiveElements ([1, 2, 3, 4, 5])  return [];
+deleteFiveElements ([1, 2, 3]) return [];
+deleteFiveElements ([])  return [].
+
+Solution:
+
+function deleteFiveElements(arr){
+  for(let i = 0; i < 5; i++) {
+    arr.shift();
+  }
+  return arr;
+}
