@@ -1,0 +1,12 @@
+Write a function includesOtherMax that takes two numeric arrays arr1 and arr2 as arguments and returns true if arr1 contains the maximum element of arr2 and false otherwise.
+
+Example:
+
+includesOtherMax ([1, 7, 5], [3, 4, 5]) must return true because the first array contains 5 - the maximum element of the second array;
+includesOtherMax ([9, 0, -5, 8], [1, 2, 3]) must return false since the first array does not contain 3 - the maximum element of the second array.
+
+Solution:
+
+function includesOtherMax(arr1, arr2){
+  return arr1.includes(Math.max(...arr2));
+}
