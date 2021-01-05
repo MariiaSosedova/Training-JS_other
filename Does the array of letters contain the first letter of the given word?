@@ -1,0 +1,16 @@
+An array is given containing a number of letters of the alphabet. The word has been given.
+Does the array contain the first letter of the given word?
+Write a function includesFirstLetter that takes an array of letters arr and the word word as arguments
+and returns true if the array contains the first letter of the given word and false otherwise.
+
+Example:
+
+includesFirstLetter (['a', 'b', 'c'], 'banana') must return true because the array contains b - the first letter of the word banana;
+includesFirstLetter (['c', 'd', 'q', 'a'], 'cat') must return true because the array contains c - the first letter of the word cat;
+includesFirstLetter (['f', 't', 'z'], 'apple') must return false since the array does not contain the letter a.
+
+Solution:
+
+function includesFirstLetter(arr, word){
+  return arr.includes(word[0]);
+}
