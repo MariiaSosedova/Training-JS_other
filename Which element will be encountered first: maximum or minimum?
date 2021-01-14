@@ -1,0 +1,19 @@
+Write a function indexMaxMin that takes a non-empty arr array as an argument and returns the string "max" 
+if the index of the first maximum element in the array is less than the index of the first minimum element in the array and the string "min" otherwise. 
+If all elements in the array are equal then return undefined.
+
+Example:
+
+indexMaxMin ([1, 10, 2, -3, 8]) must return "max" since the maximum element of array (10) is to the left of the minimum element (-3);
+indexMaxMin ([- 10, 1, 20]) must return "min" since the minimum element of the array (-10) is to the left of the maximum element (20);
+indexMaxMin ([2, 20, 20, 2]) must return "min";
+indexMaxMin ([20, 1, 1, 20]) must return "max";
+indexMaxMin ([1, 1]) must return undefined;
+indexMaxMin ([1]) must return undefined.
+
+Solution:
+
+function indexMaxMin(arr){
+  return arr.indexOf(Math.max(...arr)) === arr.indexOf(Math.min(...arr)) ? undefined : arr.indexOf(Math.max(...arr)) < arr.indexOf(Math.min(...arr)) ? 'max' : 'min';
+}
+
