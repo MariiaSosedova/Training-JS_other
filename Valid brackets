@@ -1,0 +1,21 @@
+Write a function that takes a string consisting of open and close parentheses and determines whether the parentheses are in legal order. 
+The function should return true if the string is valid and false if it is not valid.
+
+Examples:
+
+validParentheses ("()") must return true;
+validParentheses (") () (") must return false;
+validParentheses ("(((())))") must return true;
+validParentheses ("())") must return false.
+
+Solution:
+
+function validParentheses(str){
+  let leftside = 0;
+  let rightside = 0;
+  for(let el of str) {
+    if (el === "(") leftside++;
+    if (el === ")") rightside++;
+  }
+  return leftside === rightside && str[0] === "(" && str[str.length-1] === ")";
+}
