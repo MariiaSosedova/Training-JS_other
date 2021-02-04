@@ -1,0 +1,16 @@
+There is a sequence of rectangles. Each rectangle is defined by a pair of its sides [a, b]:
+[[a0, b0], [a1, b1], ..., [an, bn]]. Find the rectangle with the maximum perimeter.
+Write a maxRectanglePerimeter function that takes an arr array containing the dimensions of the rectangles as an argument and returns the maximum perimeter of the rectangle. 
+If the array is empty return null.
+
+Example:
+
+maxRectanglePerimeter ([[2, 3], [5, 6], [2, 7]]) must return 22;
+maxRectanglePerimeter ([[2, 4]])  must return 12;
+maxRectanglePerimeter ([]) must return null.
+
+Solution:
+
+function maxRectanglePerimeter(arr){
+ return arr.length === 0 ? null : Math.max(...arr.map(el => el.reduce((a,b) => (a+b)*2)));
+}
