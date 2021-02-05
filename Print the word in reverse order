@@ -1,0 +1,18 @@
+The word has been given. Get the word by reading it from right to left i.e. turn that word over.
+Write a function called reverseWord that takes word as an argument and returns a string containing the reversed word. 
+The reverse () method is not allowed in this job.
+
+Examples:
+
+reverseWord ("abc")  must return "cba";
+reverseWord ("No") must return "oN" `.
+
+Solution:
+
+function reverseWord(word){
+  let str = '';
+  for(let i = 0; i < word.length; i++) {
+    str += word[word.length - 1 - i];
+  }
+  return str;
+}
