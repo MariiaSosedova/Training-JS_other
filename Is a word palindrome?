@@ -1,0 +1,17 @@
+Write a function called isPalindrome that takes word as an argument and returns true if the word is a palindrome and false otherwise. 
+The reverse () method is not allowed in this job.
+
+Examples:
+
+isPalindrome ("abc")  must return false;
+isPalindrome ("abba") must return true.
+
+Solution:
+
+function isPalindrome(word){
+  let str = '';
+  for(let i = word.length - 1; i >= 0; i--) {
+    str += word[i];
+  }
+  return word === str;
+}
