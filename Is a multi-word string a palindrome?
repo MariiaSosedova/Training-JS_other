@@ -1,0 +1,25 @@
+Write a function called isPalindrome that takes a string str as an argument and returns true if the string is a palindrome after all spaces have been removed from it
+and false otherwise.
+In all tests strings contain only lowercase letters so don't worry about case.
+Use loops in your solution. 
+Split, reverse, replace methods are prohibited.
+
+Examples:
+
+isPalindrome ("every moment is life")  must return false;
+isPalindrome ("pull up if i pull up ')  must return true
+
+Solution:
+
+function isPalindrome(str){
+  let palindrom = '';
+  for(let i = 0; i < str.length; i++) {
+    if (str[str.length - i - 1] !== " ")
+    palindrom += str[str.length - i - 1];
+  }
+  let newstr = '';
+  for(let el of str) {
+    if(el !== " ") newstr += el;
+  }
+  return newstr === palindrom;
+}
