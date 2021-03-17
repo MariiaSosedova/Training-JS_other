@@ -1,0 +1,17 @@
+The word has been given. Repeat the word as many times as there are letters in this word.
+
+Write a function named repeatWord that takes 'word' as an argument and returns a string containing the word repeated as many times as there are letters in that word. 
+Separate words with spaces. There is no space after the last word.
+
+Examples:
+
+repeatWord ("a") return "a";
+repeatWord ("No") return "No No";
+repeatWord ("One")  return "One One One";
+repeatWord ("Five")  return "Five Five Five Five"
+
+Solution:
+
+function repeatWord(word){
+  return (word + ' ').repeat(word.length).trim();
+}
