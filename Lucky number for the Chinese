@@ -1,0 +1,29 @@
+Eight is the luckiest number for all Chinese people. Sounds like "wealth" and "prosperity."
+
+The Chinese are very often willing to pay huge sums of money for a phone number car number or apartment number in which the number 8 is present. 
+In addition the shape of the eight resembles an infinity sign and therefore the Chinese associate the eight with a never-ending flow of money.
+
+An array containing numbers is given. Get an array of numbers containing the digit 8.
+
+Write a function named luckyChineseNumber that takes an array of numbers as an argument and returns an array of Chinese lucky numbers, 
+i.e. numbers containing the digit 8.
+
+Examples:
+
+luckyChineseNumber ([124, 18, 13, 8, 81, 182, 11]) should return [18, 8, 81, 182]
+
+Solution:
+
+function luckyChineseNumber(numbers){
+  let arr = [];
+  for(let el of numbers) {
+  if ((el+'').includes('8')) arr.push(el);
+  }
+  return arr;
+}
+
+OR
+
+function luckyChineseNumber(numbers){
+  return numbers.filter(el => (el +'').includes('8'));
+}
